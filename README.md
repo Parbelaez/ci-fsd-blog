@@ -64,5 +64,3 @@ Then, the application is added to the project by adding the following line to th
 ```Python
 'blogapp.apps.BlogappConfig',
 ```
-
-
