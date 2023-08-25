@@ -23,7 +23,7 @@ source venv/bin/activate
 Finally, the dependencies are installed by running the following command:
 
 ```Python
-pip3 install django gunicorn dj_database_url dj3-cloudinary-storage urllib3
+pip3 install django gunicorn dj_database_url dj3-cloudinary-storage urllib3 psycopg2
 ```
 
 **Django**, is the main framework used to create the application. It allows the developer to create a web app using Python.
@@ -38,7 +38,25 @@ pip3 freeze > requirements.txt
 
 .venv file in the root of the project with the following variables:
 
+```Python
+import os   # for os.environ.get
 
+# Get the environment variables
+os.environ.get('DATABASE_URL') == 'YOUR_DB_URL'
+os.environ.get('SECRET_KEY') == 'YOUR_SCRET_KEY!'
+```
+
+**NOTE:** The env.py file is not pushed to GitHub because it contains sensitive information. Therefore, if you want to run the project locally, you need to create your own env.py file.
+
+But, Django also needs to know where to get the variables from, therefore, the following lines are added to the settings.py file:
+
+```Python
+import os
+import dj_database_url
+
+if os.path.isfile("env.py"):
+    import env
+```
 
 ### Create a Django project
 
