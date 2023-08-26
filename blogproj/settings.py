@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['ci-fsd-blog.herokuapp.com', 'localhost', '127.0.0.1',
-                'ci-fsd-blog-f3f701e55fbc.herokuapp.com/']
+                'ci-fsd-blog-f3f701e55fbc.herokuapp.com']
 
 
 # Application definition
