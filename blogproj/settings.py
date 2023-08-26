@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote', # with underscore... django libraries should not have hyphens
     'blogapp',
 ]
 

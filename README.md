@@ -23,12 +23,14 @@ source venv/bin/activate
 Finally, the dependencies are installed by running the following command:
 
 ```Python
-pip3 install django gunicorn dj_database_url dj3-cloudinary-storage urllib3 psycopg2
+pip3 install django gunicorn dj_database_url dj3-cloudinary-storage urllib3 psycopg2 django-summernote
 ```
 
 **Django**, is the main framework used to create the application. It allows the developer to create a web app using Python.
 **Gunicorn** is a web server that is used to deploy the application to Heroku. dj_database_url is a package that allows the developer to connect to a database. **dj3-cloudinary-storage** is a package that allows the developer to connect to Cloudinary, which is a cloud-based image and video management service.
 **urllib3** is a package that allows the developer to make HTTP requests.
+**psycopg2** is a package that allows the developer to connect to a PostgreSQL database.
+**django-summernote** is a package that allows the developer to add a rich text editor to the application.
 
 After installing the dependencies, it is needed to create a requirements.txt file by running the following command:
 
