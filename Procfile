@@ -1,1 +1,1 @@
-web: gunicorn blogapp.wsgi:application
+web: gunicorn blogproj/wsgi:application
