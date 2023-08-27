@@ -84,3 +84,13 @@ Then, the application is added to the project by adding the following line to th
 ```Python
 'blogapp.apps.BlogappConfig',
 ```
+
+
+
+To create the templates for the registration and login pages, the following command is run:
+
+```shell
+cp -r ./.venv/lib/python3.11/site-packages/allauth/templates/* ./templates
+```
+
+This will copy all the templates from the allauth package to the templates folder.
