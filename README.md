@@ -94,3 +94,22 @@ cp -r ./.venv/lib/python3.11/site-packages/allauth/templates/* ./templates
 ```
 
 This will copy all the templates from the allauth package to the templates folder.
+
+
+To be able to manage the comments and have a proper interface to do so, you need to install crispy forms by running the following command:
+
+```shell
+pip3 install django-crispy-forms
+```
+
+Then, you need to add the 'crispy-forms' line to the INSTALLED_APPS list in the settings.py file.
+
+And, as we will be using Bootstrap for these forms, then it is needed to declare the following line in the settings.py file:
+
+```Python
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+```
+
+NOTE: As of django-crispy-forms 2.0 the template packs are now in separate packages.
+
+You will need to pip install crispy-bootstrap4 and add crispy_bootstrap4 to your list of INSTALLED_APPS.
