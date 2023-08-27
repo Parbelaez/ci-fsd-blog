@@ -33,6 +33,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False # set to False for production
 
+# IMPORTANT_NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+X_FRAME_OPTIONS = 'SAMEORIGIN' # for django-summernote
+
 ALLOWED_HOSTS = ['ci-fsd-blog.herokuapp.com', 'localhost', '127.0.0.1',
                 'ci-fsd-blog-f3f701e55fbc.herokuapp.com']
 
